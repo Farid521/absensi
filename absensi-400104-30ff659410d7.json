@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "absensi-400104",
+  "private_key_id": "30ff659410d7dbc63f6c76ff7e899a4b80eb6a95",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqbzfU/+TdLuvM\n+bOT4pepXJw5gj/nKWCCmi0Mw89a4oVVzy+PGuqbB7e2kLsin+cVR0LfOnIx92ld\nZyQuWCFW79p5SyUxvl9lOC1Ilrl2ffexX2nTY8e3RimYQtfesJoY7p5pEwU2Q9Qv\ndHzQIRtoWhEpHWWmSmthhyaHKdAwgEP82ajdXmrFtB/vaCyW3UsZCZ58Gsuzy+1V\nXSoPPNWUV1D8CUNS6TeZxBqTAjvASmPHkITEtrZFR62kjCSbVKTh0FRgflq1mM5y\nmlSZOy7nbdudpi/VROIUwmDB20aK6Xe0wqn/E79BRGEmajtAqnf3gGISATYd3zJq\n6ZP+fQQ5AgMBAAECggEAAiTpDmhzwCadd9QyYqtongxYuM5/MFDQcoQvCeiSvMF5\nzPUQ05uSlQW5VXYnrI1XcmiVmkpZcnB65l5sUZrxPG9DD+CWpLQQ7iyRQUcIKUn3\nakdZhPvN4OvkjRJWNeqB3ctuucKv/5lF25z7DwFDn4H2kk5Y34kzJaR2IyAvCtUl\nBBp6gPxPQAEKr7AEpe2uuXpT1zDsNUQD+eTjKgOfoMN0VSHVD8krMgRPYJHmWprr\n9xUUSXZ+ii6zQNS4/RKOgiHvDwmqzbWI2BZmY1uqaqy0fyZM/7YALZvSTIocPnjx\nmJlGa0nKtJgPghx3jKPgW9bFslcekYKop3/OUHGY8wKBgQDUz0zpM+1o49d+uAjf\nMcczVF8ZCCGVWaSmYUziDgA2gVnBGOntk21Xiw2V+3nIPZ+wL1RcKZ0qA81EZ4MN\nZsAVwX0Soo3sEJnPnEIiUBjI2DJWHGk5heqTsLQQx+cfnnAb2ZGL/we2ewhT9SwZ\n7HJGOjz8aP7HDToS2/W+UnUYcwKBgQDNBkY73pfmne3Ni5tu8cqYkoFwBfpUkQp7\nTJiRnzAAmn6KlPuRexqyg0z725mNR5Z/bk4NbL/QqgoIgr+PbdoVgp0YJRt8CLbK\nK88fQ/6bW7sUh/oBVCpeqF00skInDaNounmcgXTTtz+XJwERnax5PZxXf3X3BRYX\nSASA/FIBowKBgDBSNdOJ//FeMtNKNHGBmwqzsLg9WWrRJQrGcy+tIC1AJ8Ipxwwz\n+pLzNw2EQX3PSFA4Hv6iUFZ28IgEvQQw/ZKzEZRGptUgW9yBTZ7+8vG/7YYSA26V\nUtNgPzLEQV2zmx8nwt239edgfl6Z//6O6s+5b5mcuaU3AqW/nkgt7vqzAoGAR+l6\newdhSj98qIreMvTWNdu1UOCX5E+XWJYOMY2fXabS2bLV5jpCq/iH6RMmcbp5XCsJ\nb4YEZaEusbuCi0FhrAfLKCvjzwaTbqgdFv9Xb5CmNtZW515pGhh90LzxnRcYiORX\nQYDaxGPTByZkJpSiaUgl7T7E1qbPD81v3vohnXcCgYEAp8bOa3i0/TOBLBHlvUbB\niZhEFUQq/xR7jsnAiR+9PuB5GY93bLw/QOI0dButgPIXkFl/Xna6iv47hMf8vWm+\nnySivoAIeNuOpq4oOTCo9vCYB/4D0KfBqYjtojYOpEdkcpUZTuMfXE0SC2rceCt8\nWPrWfWi3P8BEcVO5k2mMuEY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "absensi@absensi-400104.iam.gserviceaccount.com",
+  "client_id": "118164220057588734282",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/absensi%40absensi-400104.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
