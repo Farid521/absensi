@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 
 const app = express();
 const port = process.env.PORT || 3001;
+app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -20,6 +21,7 @@ app.get("/daftar", (req, res) => {
 
 app.post("/test", (req, res) => {
   console.log(req.body)
+  res.send('succes')
 });
 
 app.post("/daftar", daftar);
