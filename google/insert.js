@@ -27,11 +27,4 @@ export const inputData = async (absen, nama, waktu) => {
       values: [[absen, nama, waktu, "masuk",uniqid()]],
     },
   });
-
-  // Read rows from spreadsheet
-  // const getRows = await googleSheets.spreadsheets.values.get({
-  //   auth,
-  //   spreadsheetId,
-  //   range: "Sheet1",
-  // });
 };

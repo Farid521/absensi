@@ -4,6 +4,7 @@ import { getCurrentTimeInWIB } from "../util/time.js";
 
 export const verifikasi = async (req, res, next) => {
   const querryData = req.query.absen;
+  console.log(querryData)
 
   try {
     const murid = await dataMurid.findOne({ id: querryData });
@@ -16,7 +17,7 @@ export const verifikasi = async (req, res, next) => {
     await inputData(murid.nomorAbsen, murid.nama, getCurrentTimeInWIB());
     res.status(200).send('succes')
   } catch (err) {
-    console.log(err);
+    console.log(err); 
     res.send(err);
   }
 };

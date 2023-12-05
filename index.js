@@ -2,19 +2,25 @@ import express from "express";
 import mongoose from "mongoose";
 import { daftar } from "./middleware/daftar.js";
 import { verifikasi } from "./middleware/verififkasi.js";
+import path from "path";
+import { fileURLToPath } from 'url';
 
 const app = express();
 const port = process.env.PORT || 3001;
-app.use(express.json());
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/test", (req,res) => {
-  console.log(req.query.absen)
-  res.send(req.query.absen)
-})
+app.get("/daftar", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.post("/test", (req, res) => {
+  console.log(req.body)
+});
 
 app.post("/daftar", daftar);
 app.get("/verifikasi", verifikasi);
