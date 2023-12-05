@@ -4,7 +4,9 @@ import { daftar } from "./middleware/daftar.js";
 import { verifikasi } from "./middleware/verififkasi.js";
 import path from "path";
 import { fileURLToPath } from 'url';
+import cors from 'cors'
 
+app.use(cors());
 const app = express();
 const port = process.env.PORT || 3001;
 app.use(express.json());
