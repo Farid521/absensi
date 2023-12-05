@@ -6,8 +6,8 @@ import path from "path";
 import { fileURLToPath } from 'url';
 import cors from 'cors'
 
-app.use(cors());
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 3001;
 app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
