@@ -23,7 +23,10 @@ app.get("/daftar", (req, res) => {
 
 app.post("/test", (req, res) => {
   console.log(req.body)
-  res.send('succes')
+  res.json({
+    status: 'berhasil',
+    id: '1213445363'
+  })
 });
 
 app.post("/daftar", daftar);
