@@ -4,44 +4,63 @@ import { daftar } from "./middleware/daftar.js";
 import { verifikasi } from "./middleware/verififkasi.js";
 import path from "path";
 import { fileURLToPath } from 'url';
-import cors from 'cors'
+import cors from 'cors';
 
+// Constants
 const app = express();
-app.use(cors());
 const port = process.env.PORT || 3001;
-app.use(express.json());
+const mongoURI = process.env.MONGO_URI || "mongodb+srv://Farid521:yosinjin521@cluster0.tw3aobv.mongodb.net/absensi?retryWrites=true&w=majority";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.get("/", (req, res) => {
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Routes
+const urlDir = {
+  home: "/",
+  daftar: "/daftar",
+  test: "/test",
+  verifikasi: "/verifikasi"
+};
+
+app.get(urlDir.home, (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/daftar", (req, res) => {
+app.get(urlDir.daftar, (req, res) => {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
-app.post("/test", (req, res) => {
-  console.log(req.body)
+// Test route for any data
+app.post(urlDir.test, (req, res) => {
+  console.log(req.body);
   res.json({
     status: 'berhasil',
     id: '1213445363'
-  })
+  });
 });
 
-app.post("/daftar", daftar);
-app.get("/verifikasi", verifikasi);
+// Routes for daftar and verifikasi
+app.post(urlDir.daftar, daftar);
+app.get(urlDir.verifikasi, verifikasi);
 
-mongoose
-  .connect(
-    "mongodb+srv://Farid521:yosinjin521@cluster0.tw3aobv.mongodb.net/absensi?retryWrites=true&w=majority",
-    {
+// MongoDB Connection
+const connectDB = async () => {
+  try {
+    await mongoose.connect(mongoURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    }
-  )
-  .then(() => {
-    app.listen(port, () => {
-      console.log(`online at ${port}`);
     });
-  });
+    console.log('MongoDB connected successfully');
+    app.listen(port, () => {
+      console.log(`Server online at ${port}`);
+    });
+  } catch (error) {
+    console.error('MongoDB connection failed:', error.message);
+    process.exit(1); // Exit the process with failure code
+  }
+};
+
+connectDB();

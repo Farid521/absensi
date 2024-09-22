@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import dataMurid from "../models/murid.js";
 import uniqid from "uniqid";
 
